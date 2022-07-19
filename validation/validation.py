@@ -36,7 +36,8 @@ def valid(func):
     ans = ((False, None),  (True, 1),  (True, -1),   (True, 1),  (True, -1), (False, None),
            (True, 0), (True, -1), (True, 1),  (False, None))
     for i in range(10):
-        assert func(e_g[i]) == ans[i], "Функция не прошла сценарий a" + str(i+1)
+        message = str(e_g[i][0])+'\n'+str(e_g[i][2])+'\n'+str(e_g[i][2])
+        assert func(e_g[i]) == ans[i], "Функция не прошла сценарий a" + str(i+1) + '\n' + message
 
     return "Тест пройден"
 
