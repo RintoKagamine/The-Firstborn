@@ -40,6 +40,6 @@ def noughts_n_crosses(a):
         if a[0][i] == a[1][i] == a[2][i] != 0:
             return (True, a[0][i])
     if 0 not in a[0] + a[1] + a[2]:
-        return (True, 0)
+        return (True, 2) #0
     return (False, None)
 # coding=utf-8
